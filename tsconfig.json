@@ -11,6 +11,8 @@
     "outDir": "build",
     "rootDir": "./",
     "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "paths": {
       "App/*": [
         "./app/*"

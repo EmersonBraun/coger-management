@@ -60,7 +60,7 @@ export default {
       hasMsg: false,
       msg: {},
       registry: {},
-      items: ['parte','ofício']
+      items: []
     }
   },
   methods: {
@@ -68,6 +68,7 @@ export default {
       if (this.$refs.form.validate()) {
         const res = await this.$axios.post('/api/numerations', this.registry)
         this.getMsg(res.data)
+        this.clearAll()
       }
     },
     getMsg (data) {
@@ -75,8 +76,16 @@ export default {
       this.hasMsg = true
       this.msg.type = data ? 'success' : 'error'
       this.msg.message = this.msg.type === 'error' ? 'Erro ao inserir' : `N° ${data.ref}/${data.year} (sequência: ${data.sequence})`
+    },
+    clearAll () {
+      this.$refs.form.resetValidation()
+      this.registry = {}
     }
   },
+  async mounted () {
+    const res = await this.$axios.get('/api/options')
+    this.items = res.data.map(v => v.name)
+  }
 
 }
 </script>

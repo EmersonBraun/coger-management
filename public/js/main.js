@@ -62809,7 +62809,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(16), __webpack_require__.e(32)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
   }
 }]);
 

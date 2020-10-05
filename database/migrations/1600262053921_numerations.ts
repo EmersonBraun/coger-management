@@ -12,8 +12,8 @@ export default class Numerations extends BaseSchema {
       table.integer('year').nullable()
       table.string('responsible').notNullable()
       table.text('description').notNullable()
-      table.timestamp('created_at').nullable().defaultTo(new Date())
       table.text('ip').nullable()
+      table.timestamps()
       // table.integer('user_id').notNullable()
 
       // table.foreign('user_id').references('id').inTable('users').onDelete('CASCADE')
