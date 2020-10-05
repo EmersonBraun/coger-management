@@ -23,19 +23,19 @@ import Route from '@ioc:Adonis/Core/Route'
 Route
   .group(() => {
     // numerator
-    Route.resource('options','OptionsController').apiOnly()
-    Route.resource('numerations','NumerationsController').apiOnly()
+    Route.resource('options','numerator/OptionsController').apiOnly()
+    Route.resource('numerations','numerator/NumerationsController').apiOnly()
     //users
-    Route.resource('ramals','RamalsController').apiOnly()
-    Route.resource('sectors','SectorsController').apiOnly()
-    Route.resource('patrimonies','PatrimoniesController').apiOnly()
-    Route.resource('users','UsersController').apiOnly()
-    Route.resource('ips','IpsController').apiOnly()
-    Route.resource('graduations','GraduationsController').apiOnly()
-    Route.resource('groups','GroupsController').apiOnly()
-    Route.resource('folders','FoldersController').apiOnly()
-    Route.resource('contacts','ContactsController').apiOnly()
-    Route.resource('phone-types','PhoneTypesController').apiOnly()
+    Route.resource('ramals','users/RamalsController').apiOnly()
+    Route.resource('sectors','users/SectorsController').apiOnly()
+    Route.resource('patrimonies','users/PatrimoniesController').apiOnly()
+    Route.resource('users','users/UsersController').apiOnly()
+    Route.resource('ips','users/IpsController').apiOnly()
+    Route.resource('graduations','users/GraduationsController').apiOnly()
+    Route.resource('groups','users/GroupsController').apiOnly()
+    Route.resource('folders','users/FoldersController').apiOnly()
+    Route.resource('contacts','users/ContactsController').apiOnly()
+    Route.resource('phone-types','users/PhoneTypesController').apiOnly()
     //stock
     //VTR
   })

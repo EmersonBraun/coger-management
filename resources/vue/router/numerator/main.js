@@ -1,6 +1,6 @@
 export default [
   {
     path: '/',
-    component: () => import('@/pages/users/Index.vue'),
+    component: () => import('@/pages/numerator/Index.vue'),
   },
 ]

@@ -22,7 +22,30 @@ class NumerationsRepository {
     return await find(this.model, id)
   }
 
+  async getNextSequence (option) {
+    const reg = await Numeration.query().where('option',option).max('sequence').first()
+    let value = reg['max(`sequence`)']
+    const next = !value ? 1 : ++value
+    return next
+  }
+
+  async getNextRef (option, year) {
+    const reg = await Numeration
+      .query()
+      .where('option',option)
+      .where('year',year)
+      .max('ref')
+      .first()
+
+    let value = reg['max(`ref`)']
+    const next = !value ? 1 : ++value
+    return next
+  }
+
   async create (data: any) {
+    data.year = data.year || new Date().getFullYear()
+    data.sequence = await this.getNextSequence(data.option)
+    data.ref = await this.getNextRef(data.option, data.year)
     return await create(this.model, data)
   }
 

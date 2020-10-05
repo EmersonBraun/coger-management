@@ -1,8 +1,28 @@
 import BaseSeeder from '@ioc:Adonis/Lucid/Seeder'
-import { OptionFactory } from '../factories/numerator/OptionFactory'
+import Option from 'App/Models/numerator/Option'
 
 export default class OptionSeeder extends BaseSeeder {
   public async run () {
-    await OptionFactory.createMany(10)
+    await Option.createMany([
+      {name: 'Boletim', abbreviation: 'boletim'},
+      {name: 'Boletim Reservado', abbreviation: 'BR'},
+      {name: 'BR Corregedor', abbreviation: 'BRC'},
+      {name: 'Cautela', abbreviation: 'cautela'},
+      {name: 'Certidão', abbreviation: 'certidao'},
+      {name: 'Despacho', abbreviation: 'despacho'},
+      {name: 'Informação', abbreviation: 'informacao'},
+      {name: 'Memorando', abbreviation: 'memorando'},
+      {name: 'Memorando Reservado', abbreviation: 'memorandoreservado'},
+      {name: 'Nota Boletim', abbreviation: 'notaboletim'},
+      {name: 'Nota Instrucao', abbreviation: 'notainstrucao'},
+      {name: 'Nota Servico', abbreviation: 'notaservico'},
+      {name: 'Ofício', abbreviation: 'oficio'},
+      {name: 'Orientacao', abbreviation: 'orientacao'},
+      {name: 'Parecer', abbreviation: 'parecer'},
+      {name: 'Parte', abbreviation: 'parte'},
+      {name: 'Termo Entrega', abbreviation: 'termoentrega'},
+      {name: 'Termo Exame', abbreviation: 'termoexame'},
+      {name: 'Termo Recebimento', abbreviation: 'termorecebimento'},
+    ])
   }
 }

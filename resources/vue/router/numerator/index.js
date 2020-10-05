@@ -5,7 +5,7 @@ import options from './options'
 export default [
   {
     path: '/numerador',
-    component: () => import('@/layouts/Numerator.vue'),
+    component: () => import('@/layouts/Centered.vue'),
     children: [
       ...main,
       ...numerations,

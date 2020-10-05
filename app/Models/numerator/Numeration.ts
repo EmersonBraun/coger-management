@@ -23,6 +23,9 @@ export default class Numeration extends BaseModel {
   public option: string
 
   @column()
+  public responsible: string
+
+  @column()
   public user_id: number
 
   @column.dateTime({ autoCreate: true })

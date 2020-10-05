@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/explicit-member-accessibility */
 import { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+import { errorsToString } from 'App/Services/errors'
 
 import NumerationsRepository from '../../../Repositories/numerator/NumerationsRepository'
 import { NumerationSchema } from '../../../Validators/numerator/NumerationSchema'
@@ -25,7 +26,7 @@ export default class NumerationsController {
     try {
       await request.validate({schema: NumerationSchema})
     } catch (error) {
-      const msg = error.messages.errors.map(e => `${e.field} is ${e.rule}`).join(', ')
+      const msg = errorsToString(error)
       // console.log(error.messages.errors)
       return response
         .safeHeader('returnType', 'error')
