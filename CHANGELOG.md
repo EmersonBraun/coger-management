@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/EmersonBraun/coger-management/compare/v0.2.0...v0.3.0) (2020-10-05)
+
+
+### Features
+
+* minimum functions to numerator ([5d499b7](https://github.com/EmersonBraun/coger-management/commit/5d499b773614d6a5e4e0cf1a2e86b74585efcc87))
+
 ## [0.2.0](https://github.com/EmersonBraun/coger-management/compare/v0.1.0...v0.2.0) (2020-10-05)
 
 
