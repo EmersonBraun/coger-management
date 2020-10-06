@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.5.0](https://github.com/EmersonBraun/coger-management/compare/v0.4.0...v0.5.0) (2020-10-06)
+
+
+### Features
+
+* create README and LICENSE ([a44a9cf](https://github.com/EmersonBraun/coger-management/commit/a44a9cf11db3ab27a221df0b555ccbc9c41c4341))
+
 ## [0.4.0](https://github.com/EmersonBraun/coger-management/compare/v0.3.0...v0.4.0) (2020-10-06)
 
 
