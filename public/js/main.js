@@ -2252,10 +2252,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'App',
-  mounted: function mounted() {
-    console.log('mounted');
-  }
+  name: 'App'
 });
 
 /***/ }),
@@ -62807,9 +62804,9 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
-  path: '/',
+  path: '',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(32), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(18), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
   }
 }]);
 
@@ -62825,23 +62822,10 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
-  path: '/',
-  children: [{
-    path: '',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Index.vue */ "./resources/vue/pages/numerator/numerations/Index.vue"));
-    }
-  }, {
-    path: 'criar',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Form.vue */ "./resources/vue/pages/numerator/numerations/Form.vue"));
-    }
-  }, {
-    path: 'editar/:id',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Form.vue */ "./resources/vue/pages/numerator/numerations/Form.vue"));
-    }
-  }]
+  path: 'lista',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Index.vue */ "./resources/vue/pages/numerator/numerations/Index.vue"));
+  }
 }]);
 
 /***/ }),
@@ -62856,23 +62840,10 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
-  path: '/opcoes',
-  children: [{
-    path: '',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Index.vue */ "./resources/vue/pages/numerator/options/Index.vue"));
-    }
-  }, {
-    path: 'criar',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Form.vue */ "./resources/vue/pages/numerator/options/Form.vue"));
-    }
-  }, {
-    path: 'editar/:id',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Form.vue */ "./resources/vue/pages/numerator/options/Form.vue"));
-    }
-  }]
+  path: 'opcoes',
+  component: function component() {
+    return Promise.all(/*! import() */[__webpack_require__.e(18), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Index.vue */ "./resources/vue/pages/numerator/options/Index.vue"));
+  }
 }]);
 
 /***/ }),

@@ -70,6 +70,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Index',
   data: function data() {
@@ -115,7 +117,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     getMsg: function getMsg(data) {
-      console.log(data);
       this.hasMsg = true;
       this.msg.type = data ? 'success' : 'error';
       this.msg.message = this.msg.type === 'error' ? 'Erro ao inserir' : "N\xB0 ".concat(data.ref, "/").concat(data.year, " (sequ\xEAncia: ").concat(data.sequence, ")");
@@ -212,7 +213,7 @@ var render = function() {
                   }
                 },
                 [
-                  _c("v-select", {
+                  _c("v-autocomplete", {
                     attrs: {
                       label: "Opção",
                       "prepend-icon": "mdi-check",
@@ -222,7 +223,9 @@ var render = function() {
                           return !!v || "Opção é obrigatória"
                         }
                       ],
-                      required: ""
+                      required: "",
+                      "auto-select-first": "",
+                      "no-data-text": "Opção inválida"
                     },
                     model: {
                       value: _vm.registry.option,

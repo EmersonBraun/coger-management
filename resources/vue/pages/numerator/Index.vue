@@ -12,13 +12,15 @@
         </v-toolbar>
           <v-card-text>
             <v-form v-model="valid" ref="form" lazy-validation>
-              <v-select
+              <v-autocomplete
                 label="Opção"
                 prepend-icon="mdi-check"
                 :items="items"
                 :rules="[v => !!v || 'Opção é obrigatória']"
                 v-model="registry.option"
                 required
+                auto-select-first
+                no-data-text="Opção inválida"
               />
               <v-text-field
               label="Responsável"
@@ -72,7 +74,6 @@ export default {
       }
     },
     getMsg (data) {
-      console.log(data)
       this.hasMsg = true
       this.msg.type = data ? 'success' : 'error'
       this.msg.message = this.msg.type === 'error' ? 'Erro ao inserir' : `N° ${data.ref}/${data.year} (sequência: ${data.sequence})`

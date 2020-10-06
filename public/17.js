@@ -15,6 +15,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'Index'
 });
@@ -36,7 +40,9 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("v-container", [_vm._v("\n  Index\n")])
+  return _c("v-col", { attrs: { cols: "12", sm: "8", md: "4" } }, [
+    _vm._v("\n  Index\n")
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true

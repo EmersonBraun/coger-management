@@ -1,7 +1,11 @@
 <template>
-  <v-container>
+  <v-col
+    cols="12"
+    sm="8"
+    md="4"
+    >
     Index
-  </v-container>
+  </v-col>
 </template>
 
 <script>
