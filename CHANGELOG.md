@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/EmersonBraun/coger-management/compare/v0.5.0...v0.6.0) (2020-10-08)
+
+
+### Features
+
+* add function to list and update numerations ([ed92095](https://github.com/EmersonBraun/coger-management/commit/ed920953958b368ecb99d6139c551efda42884d1))
+
 ## [0.5.0](https://github.com/EmersonBraun/coger-management/compare/v0.4.0...v0.5.0) (2020-10-06)
 
 
