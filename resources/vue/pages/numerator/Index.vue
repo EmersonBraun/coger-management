@@ -50,6 +50,10 @@
         </v-btn>
       </v-card-actions>
     </v-card>
+    <v-btn class="navigation" color="#66BB6A" block to="numerador/lista">
+      Ir para lista 
+      <v-icon>mdi-arrow-right</v-icon>
+    </v-btn>
   </v-col>
 </template>
 
@@ -90,3 +94,8 @@ export default {
 
 }
 </script>
+<style scoped>
+.navigation {
+  margin-top: 20%;
+}
+</style>

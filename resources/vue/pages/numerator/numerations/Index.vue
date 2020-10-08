@@ -34,7 +34,7 @@ export default {
     return {
       search: '',
       headers: [
-        { text: 'Nome', align: 'start', value: 'option',},
+        { text: 'Nome', align: 'start', value: 'name',},
         { text: 'Ref', value: 'ref' },
         { text: 'Sequência', value: 'sequence' },
         { text: 'Ações', value: 'actions', sortable: false },

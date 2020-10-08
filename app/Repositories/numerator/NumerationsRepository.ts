@@ -38,7 +38,12 @@ class NumerationsRepository {
     // return await all(this.model)
   }
 
-  async option (option) {
+  async option (option: string) {
+    option = decodeURIComponent(option)
+    if (option === 'all') {
+      const data = await Numeration.all()
+      return mountResponse(data, 'load')
+    }
     const data = await Numeration.query().where('option',option).orderBy('id','desc')
     return mountResponse(data, 'load')
   }
