@@ -62702,7 +62702,7 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @/pages/Auth.vue */ "./resources/vue/pages/Auth.vue"));
+      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @/pages/Auth.vue */ "./resources/vue/pages/Auth.vue"));
     }
   }]
 }]);
@@ -62745,7 +62745,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @/layouts/Clean.vue */ "./resources/vue/layouts/Clean.vue"));
+    return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @/layouts/Clean.vue */ "./resources/vue/layouts/Clean.vue"));
   },
   children: [{
     path: '',
@@ -62806,7 +62806,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(18), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/Index.vue */ "./resources/vue/pages/numerator/Index.vue"));
   }
 }]);
 
@@ -62824,7 +62824,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: 'lista',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Index.vue */ "./resources/vue/pages/numerator/numerations/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(31)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Index.vue */ "./resources/vue/pages/numerator/numerations/Index.vue"));
+  }
+}, {
+  path: 'lista/:option',
+  component: function component() {
+    return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/numerations/Option.vue */ "./resources/vue/pages/numerator/numerations/Option.vue"));
   }
 }]);
 
@@ -62842,7 +62847,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: 'opcoes',
   component: function component() {
-    return Promise.all(/*! import() */[__webpack_require__.e(18), __webpack_require__.e(1)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Index.vue */ "./resources/vue/pages/numerator/options/Index.vue"));
+    return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @/pages/numerator/options/Index.vue */ "./resources/vue/pages/numerator/options/Index.vue"));
   }
 }]);
 
@@ -63130,17 +63135,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Index.vue */ "./resources/vue/pages/users/IPS/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 18).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Index.vue */ "./resources/vue/pages/users/IPS/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Form.vue */ "./resources/vue/pages/users/IPS/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Form.vue */ "./resources/vue/pages/users/IPS/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Form.vue */ "./resources/vue/pages/users/IPS/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! @/pages/users/IPS/Form.vue */ "./resources/vue/pages/users/IPS/Form.vue"));
     }
   }]
 }]);
@@ -63161,17 +63166,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Index.vue */ "./resources/vue/pages/users/contacts/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Index.vue */ "./resources/vue/pages/users/contacts/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Form.vue */ "./resources/vue/pages/users/contacts/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Form.vue */ "./resources/vue/pages/users/contacts/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Form.vue */ "./resources/vue/pages/users/contacts/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 2).then(__webpack_require__.bind(null, /*! @/pages/users/contacts/Form.vue */ "./resources/vue/pages/users/contacts/Form.vue"));
     }
   }]
 }]);
@@ -63192,17 +63197,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Index.vue */ "./resources/vue/pages/users/folders/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Index.vue */ "./resources/vue/pages/users/folders/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Form.vue */ "./resources/vue/pages/users/folders/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Form.vue */ "./resources/vue/pages/users/folders/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Form.vue */ "./resources/vue/pages/users/folders/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 3).then(__webpack_require__.bind(null, /*! @/pages/users/folders/Form.vue */ "./resources/vue/pages/users/folders/Form.vue"));
     }
   }]
 }]);
@@ -63223,17 +63228,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Index.vue */ "./resources/vue/pages/users/graduations/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Index.vue */ "./resources/vue/pages/users/graduations/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Form.vue */ "./resources/vue/pages/users/graduations/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Form.vue */ "./resources/vue/pages/users/graduations/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Form.vue */ "./resources/vue/pages/users/graduations/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 4).then(__webpack_require__.bind(null, /*! @/pages/users/graduations/Form.vue */ "./resources/vue/pages/users/graduations/Form.vue"));
     }
   }]
 }]);
@@ -63254,17 +63259,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Index.vue */ "./resources/vue/pages/users/groups/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Index.vue */ "./resources/vue/pages/users/groups/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Form.vue */ "./resources/vue/pages/users/groups/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Form.vue */ "./resources/vue/pages/users/groups/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Form.vue */ "./resources/vue/pages/users/groups/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! @/pages/users/groups/Form.vue */ "./resources/vue/pages/users/groups/Form.vue"));
     }
   }]
 }]);
@@ -63317,7 +63322,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/usuarios',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @/layouts/Main.vue */ "./resources/vue/layouts/Main.vue"));
+    return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @/layouts/Main.vue */ "./resources/vue/layouts/Main.vue"));
   },
   children: [].concat(_toConsumableArray(_main__WEBPACK_IMPORTED_MODULE_0__["default"]), _toConsumableArray(_IPS__WEBPACK_IMPORTED_MODULE_1__["default"]), _toConsumableArray(_contacts__WEBPACK_IMPORTED_MODULE_2__["default"]), _toConsumableArray(_folders__WEBPACK_IMPORTED_MODULE_3__["default"]), _toConsumableArray(_graduations__WEBPACK_IMPORTED_MODULE_4__["default"]), _toConsumableArray(_groups__WEBPACK_IMPORTED_MODULE_5__["default"]), _toConsumableArray(_patrimonies__WEBPACK_IMPORTED_MODULE_6__["default"]), _toConsumableArray(_phoneTypes__WEBPACK_IMPORTED_MODULE_7__["default"]), _toConsumableArray(_ramals__WEBPACK_IMPORTED_MODULE_8__["default"]), _toConsumableArray(_sectors__WEBPACK_IMPORTED_MODULE_9__["default"]), _toConsumableArray(_users__WEBPACK_IMPORTED_MODULE_10__["default"]))
 }]);
@@ -63336,7 +63341,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @/pages/users/Index.vue */ "./resources/vue/pages/users/Index.vue"));
+    return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @/pages/users/Index.vue */ "./resources/vue/pages/users/Index.vue"));
   }
 }]);
 
@@ -63356,17 +63361,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Index.vue */ "./resources/vue/pages/users/patrimonies/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Index.vue */ "./resources/vue/pages/users/patrimonies/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Form.vue */ "./resources/vue/pages/users/patrimonies/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Form.vue */ "./resources/vue/pages/users/patrimonies/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Form.vue */ "./resources/vue/pages/users/patrimonies/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! @/pages/users/patrimonies/Form.vue */ "./resources/vue/pages/users/patrimonies/Form.vue"));
     }
   }]
 }]);
@@ -63387,17 +63392,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Index.vue */ "./resources/vue/pages/users/phoneTypes/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Index.vue */ "./resources/vue/pages/users/phoneTypes/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Form.vue */ "./resources/vue/pages/users/phoneTypes/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Form.vue */ "./resources/vue/pages/users/phoneTypes/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Form.vue */ "./resources/vue/pages/users/phoneTypes/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @/pages/users/phoneTypes/Form.vue */ "./resources/vue/pages/users/phoneTypes/Form.vue"));
     }
   }]
 }]);
@@ -63418,17 +63423,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Index.vue */ "./resources/vue/pages/users/ramals/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Index.vue */ "./resources/vue/pages/users/ramals/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Form.vue */ "./resources/vue/pages/users/ramals/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Form.vue */ "./resources/vue/pages/users/ramals/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Form.vue */ "./resources/vue/pages/users/ramals/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @/pages/users/ramals/Form.vue */ "./resources/vue/pages/users/ramals/Form.vue"));
     }
   }]
 }]);
@@ -63449,17 +63454,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Index.vue */ "./resources/vue/pages/users/sectors/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Index.vue */ "./resources/vue/pages/users/sectors/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Form.vue */ "./resources/vue/pages/users/sectors/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Form.vue */ "./resources/vue/pages/users/sectors/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 11).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Form.vue */ "./resources/vue/pages/users/sectors/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @/pages/users/sectors/Form.vue */ "./resources/vue/pages/users/sectors/Form.vue"));
     }
   }]
 }]);
@@ -63480,17 +63485,17 @@ __webpack_require__.r(__webpack_exports__);
   children: [{
     path: '',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @/pages/users/users/Index.vue */ "./resources/vue/pages/users/users/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @/pages/users/users/Index.vue */ "./resources/vue/pages/users/users/Index.vue"));
     }
   }, {
     path: 'criar',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @/pages/users/users/Form.vue */ "./resources/vue/pages/users/users/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @/pages/users/users/Form.vue */ "./resources/vue/pages/users/users/Form.vue"));
     }
   }, {
     path: 'editar/:id',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @/pages/users/users/Form.vue */ "./resources/vue/pages/users/users/Form.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @/pages/users/users/Form.vue */ "./resources/vue/pages/users/users/Form.vue"));
     }
   }]
 }]);

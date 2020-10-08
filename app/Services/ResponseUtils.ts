@@ -2,6 +2,13 @@
 import transations from '../../config/transations'
 export type TypeFunction = 'login'|'load'|'found'|'create'|'update'|'delete' |'restore'|'forceDelete'
 
+export function mountResponse (data: any, type: TypeFunction, contentError = '') {
+  const statusCode = getSatusCode(contentError, type)
+  const returnType = getHappen(statusCode)
+  const message = getMessage(type, statusCode)
+  return { data, statusCode, returnType, message, contentError }
+}
+
 export function getSatusCode (contentError: any, typeFunction: TypeFunction): number {
   if (typeFunction === 'create') {
     return !contentError.length ? 201 : 400

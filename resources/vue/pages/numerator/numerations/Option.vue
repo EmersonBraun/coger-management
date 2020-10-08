@@ -21,12 +21,12 @@
           <v-icon small @click="remove(item.id)">mdi-delete</v-icon>
         </template>
       </v-data-table>
-      <v-btn block color="primary" @click="formModal = true">
+       <v-btn block color="primary" @click="formModal = true">
         Inserir
         <v-icon>mdi-plus</v-icon>
       </v-btn>
     </v-card>
-     <v-dialog
+    <v-dialog
         v-model="formModal"
         persistent
       >
@@ -38,18 +38,20 @@
           <v-card-text>
             <v-form v-model="valid" ref="form" lazy-validation>
               <v-text-field
-              label="Nome"
+              label="Responsável"
+              prepend-icon="mdi-account"
               type="text"
-              v-model="registry.name"
-              :rules="[v => !!v || 'Nome é obrigatório']"
+              v-model="registry.responsible"
+              :rules="[v => !!v || 'Responsável é obrigatório']"
               required
               />
 
               <v-text-field
-              label="Abreviação"
+              label="Descrição"
+              prepend-icon="mdi-card-text-outline"
               type="text"
-              v-model="registry.abbreviation"
-              :rules="[v => !!v || 'Abreviação é obrigatória']"
+              v-model="registry.description"
+              :rules="[v => !!v || 'Descrição é obrigatória']"
               required
               />
 
@@ -74,6 +76,7 @@ export default {
   name: 'Index',
   data () {
     return {
+      option: '',
       search: '',
       formModal: false,
       hasMsg: false,
@@ -81,8 +84,11 @@ export default {
       registry: {},
       msg: {},
       headers: [
-        { text: 'Nome', align: 'start', value: 'name',},
-        { text: 'Abreviação', value: 'abbreviation' },
+        { text: 'Responsável', align: 'start', value: 'responsible',},
+        { text: 'Ref', value: 'ref' },
+        { text: 'Ano', value: 'year' },
+        { text: 'Descrição', value: 'description' },
+        { text: 'Sequência', value: 'sequence' },
         { text: 'Ações', value: 'actions', sortable: false },
       ],
       items: []
@@ -90,12 +96,13 @@ export default {
   },
   methods: {
     async getAll () {
-      const res = await this.$axios.get('/api/options')
+      const res = await this.$axios.get(`/api/numerations/${this.option}`)
       this.items = res.data
     },
-    async create () {
+     async create () {
       if (this.$refs.form.validate()) {
-        const res = await this.$axios.post('/api/options', this.registry)
+        this.registry.option = this.option
+        const res = await this.$axios.post('/api/numerations', this.registry)
         this.getMsg(res.data, 'create')
         this.clearAll()
       }
@@ -107,14 +114,14 @@ export default {
     async update () {
       const id = this.registry.id
       if (this.$refs.form.validate() && id) {
-        const res = await this.$axios.put(`/api/options/${id}`, this.registry)
+        const res = await this.$axios.put(`/api/numerations/${id}`, this.registry)
         this.getMsg(res.data, 'update')
         this.clearAll()
       }
     },
     async remove (id) {
       if (confirm('Você tem certeza?')) {
-        const res = await this.$axios.delete(`/api/options/${id}`)
+        const res = await this.$axios.delete(`/api/numerations/${id}`)
         this.getMsg(res.data, 'delete')
         this.clearAll()
       }
@@ -122,7 +129,8 @@ export default {
     getMsg (data, type) {
       this.hasMsg = true
       this.msg.type = data ? 'success' : 'error'
-      this.msg.message = msg[type][this.msg.type]
+      if (type === 'create') this.msg.message = this.msg.type === 'error' ? 'Erro ao inserir' : `N° ${data.ref}/${data.year} (sequência: ${data.sequence})`
+      else this.msg.message = msg[type][this.msg.type]
     },
     clearAll () {
       this.registry = {}
@@ -134,16 +142,8 @@ export default {
       this.formModal = false
     }
   },
-  watch: {
-    hasMsg (newVal) {
-      if (newVal) {
-        setTimeout(() => {
-          this.hasMsg = false
-        },3000)
-      }
-    }
-  },
   async mounted () {
+    this.option = this.$route.params.option
     this.getAll()
   }
 }

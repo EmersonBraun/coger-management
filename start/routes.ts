@@ -24,6 +24,8 @@ Route
   .group(() => {
     // numerator
     Route.resource('options','numerator/OptionsController').apiOnly()
+    Route.get('numerations-current','numerator/NumerationsController.current')
+    Route.get('numerations/:option','numerator/NumerationsController.option')
     Route.resource('numerations','numerator/NumerationsController').apiOnly()
     //users
     Route.resource('ramals','users/RamalsController').apiOnly()

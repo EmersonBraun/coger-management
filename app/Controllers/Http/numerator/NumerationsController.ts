@@ -22,6 +22,28 @@ export default class NumerationsController {
       .json(data)
   }
 
+  async current ({ response }: HttpContextContract) {
+    const register = await this.repository.current()
+    const { data, statusCode, returnType, message, contentError } = register
+    return response
+      .safeHeader('returnType', returnType)
+      .safeHeader('message', message)
+      .safeHeader('contentError', contentError)
+      .status(statusCode)
+      .json(data)
+  }
+
+  async option ({ response, params }: HttpContextContract) {
+    const register = await this.repository.option(params.option)
+    const { data, statusCode, returnType, message, contentError } = register
+    return response
+      .safeHeader('returnType', returnType)
+      .safeHeader('message', message)
+      .safeHeader('contentError', contentError)
+      .status(statusCode)
+      .json(data)
+  }
+
   async store ({ request, response }: HttpContextContract) {
     try {
       await request.validate({schema: NumerationSchema})
