@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/EmersonBraun/coger-management/compare/v0.7.0...v0.7.1) (2020-10-09)
+
+
+### Bug Fixes
+
+* update dump ([705fd7a](https://github.com/EmersonBraun/coger-management/commit/705fd7a74a3e6bf9703150e7ddb0513e8900a382))
+
 ## [0.7.0](https://github.com/EmersonBraun/coger-management/compare/v0.6.0...v0.7.0) (2020-10-08)
 
 
